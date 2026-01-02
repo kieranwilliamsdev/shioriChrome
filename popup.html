@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      width: 260px;
+      padding: 12px;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    input, button {
+      width: 100%;
+      margin-top: 8px;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+
+    #status {
+      margin-top: 8px;
+      font-size: 12px;
+    }
+
+    .secondary {
+      background: #444;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Save to Shiori</h3>
+
+  <input id="tags" placeholder="tags (comma separated)">
+
+  <button id="save">Save current tab</button>
+  <button id="settings" class="secondary">Settings / Login</button>
+
+  <p id="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

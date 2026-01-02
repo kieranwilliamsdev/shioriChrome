@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Save to Shiori",
+  "version": "1.0.0",
+  "description": "Save bookmarks to Shiori",
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "options_page": "options.html",
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
